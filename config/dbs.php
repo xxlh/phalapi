@@ -17,8 +17,8 @@ return array(
             // 'host'      => 'shenei.net',             //数据库域名
             'host'      => '127.0.0.1',             //数据库域名
             'name'      => 'shenebwx_sina',               //数据库名字
-            'user'      => 'root',                  //数据库用户名
-            'password'  => '01',	                    //数据库密码
+            'user'      => 'shenebwx_sina',                  //数据库用户名
+            'password'  => 'sinaxm',	                    //数据库密码
             'port'      => 3306,                    //数据库端口
             'charset'   => 'UTF8',                  //数据库字符集
         ),
