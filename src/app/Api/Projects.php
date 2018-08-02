@@ -18,7 +18,7 @@ class Projects extends Api {
             'getList' => array(
                 'page' => array('name' => 'page', 'type' => 'int', 'min' => 1, 'default' => 1, 'desc' => '第几页'),
                 'perpage' => array('name' => 'perpage', 'type' => 'int', 'min' => 1, 'max' => 20, 'default' => 10, 'desc' => '分页数量'),
-                'search' => array('name' => 'search', 'type' => 'int', 'default' => 0, 'desc' => '模糊查询字段'),
+                'search' => array('name' => 'search', 'type' => 'string', 'default' => '', 'desc' => '模糊查询字段'),
             ),
         );
 	}
