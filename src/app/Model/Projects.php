@@ -10,14 +10,14 @@ class Projects extends NotORM {
         if($search==''){
             return $this->getORM()
             ->select('*')
-            ->order('dateline DESC')
+            ->order('id DESC')
             ->limit(($page - 1) * $perpage, $perpage)
             ->fetchAll();
         }else{
             return $this->getORM()
             ->select('*')
             ->where('tag like ?',  '%'.$search.'%')
-            ->order('dateline DESC')
+            ->order('id DESC')
             ->limit(($page - 1) * $perpage, $perpage)
             ->fetchAll();
         }
