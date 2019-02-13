@@ -43,9 +43,9 @@ $di->notorm = new NotORMDatabase($di->config->get('dbs'), $di->debug);
 // };
 
 // 支持JsonP的返回
-// if (!empty($_GET['callback'])) {
-//     $di->response = new \PhalApi\Response\JsonpResponse($_GET['callback']);
-// }
+if (!empty($_GET['callback'])) {
+    $di->response = new \PhalApi\Response\JsonpResponse($_GET['callback']);
+}
 
 // 生成二维码扩展，参考示例：?s=App.Examples_QrCode.Png
 // $di->qrcode = function() {
