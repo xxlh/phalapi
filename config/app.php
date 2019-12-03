@@ -27,5 +27,7 @@ return array(
      */
     'service_whitelist' => array(
         'Site.Index',
+        'Projects.*',
+        'Keyword.*',
     ),
 );
